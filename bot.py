@@ -73,7 +73,7 @@ def echo_message(message):
         row = cur.fetchall()
         if row:
             row = row[0]
-            bot.send_message(message.chat.id,"Of course! I know this movie😌")
+            bot.send_message(message.chat.id,"Конечно! Я знаю этот фильм😌")
             senf_info(bot, message, row)
         else:
             bot.send_message(message.chat.id,"I don't know this movie ")

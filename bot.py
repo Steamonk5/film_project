@@ -10,10 +10,10 @@ bot = telebot.TeleBot(config.API_TOKEN)
 def senf_info(bot, message, row):
         
         info = f"""
-📍Title of movie:   {row[2]}
-📍Year:                   {row[3]}
-📍Genres:              {row[4]}
-📍Rating IMDB:      {row[5]}
+📍Название:   {row[2]}
+📍Год:                   {row[3]}
+📍Жанры:              {row[4]}
+📍Рейтинг:      {row[5]}
 
 
 🔻🔻🔻🔻🔻🔻🔻🔻🔻🔻🔻

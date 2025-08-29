@@ -44,10 +44,13 @@ def callback_query(call):
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
-    bot.send_message(message.chat.id, """Hello! You're welcome to the best Movie-Chat-Bot🎥!
-Here you can find 1000 movies 🔥
-Click /random to get random movie
-Or write the title of movie and I will try to find it! 🎬 """, reply_markup=main_markup())
+    bot.send_message(message.chat.id, """Привет! Добро пожаловать в лучший чат-бот для просмотра фильмов🎥!
+Здесь вы можете найти 1000 фильмов 🔥
+Нажмите / random, чтобы получить случайный фильм
+Или напишите название фильма, и я постараюсь его найти! 🎬 """, reply_markup=main_markup())
+
+
+
 
 @bot.message_handler(commands=['random'])
 def random_movie(message):
